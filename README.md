@@ -8,6 +8,9 @@ recursively monitor directories.
 
 It's written in Python, making it easier to hack.
 
+This fork adds support for logging and exclude/include files to be processed by extension.
+Also the `debug` mode now stops properly by hitting `Ctrl+C`.
+
 ## Requirements
 
 You need Python 2.7 and the [pyinotify](http://github.com/seb-m/pyinotify)
@@ -16,6 +19,8 @@ library.
 In Ubuntu (and Debian) you can install these with:
 
     sudo apt-get install python python-pyinotify
+    
+As for this fork, its purpose is to work with [subliminal](http://github.com/Diaoul/subliminal), therefore it is needed to support the `video` keyword for `included_extensions`
 
 ## Configuration
 
